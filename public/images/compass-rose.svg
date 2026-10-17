@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <title>Compass rose</title>
+  <defs>
+    <!-- Intercardinal point (drawn pointing north, then rotated) -->
+    <g id="minor">
+      <polygon points="250,108 250,236 232,236" fill="#fff" stroke="#000" stroke-width="3" stroke-linejoin="round"/>
+      <polygon points="250,108 268,236 250,236" fill="#000" stroke="#000" stroke-width="3" stroke-linejoin="round"/>
+    </g>
+    <!-- Cardinal point (drawn pointing north, then rotated) -->
+    <g id="major">
+      <polygon points="250,20 250,250 226,232" fill="#fff" stroke="#000" stroke-width="4" stroke-linejoin="round"/>
+      <polygon points="250,20 274,232 250,250" fill="#000" stroke="#000" stroke-width="4" stroke-linejoin="round"/>
+    </g>
+  </defs>
+
+  <!-- Outer ring -->
+  <circle cx="250" cy="250" r="104" fill="none" stroke="#000" stroke-width="16"/>
+
+  <!-- Intercardinal points -->
+  <use href="#minor" transform="rotate(45 250 250)"/>
+  <use href="#minor" transform="rotate(135 250 250)"/>
+  <use href="#minor" transform="rotate(225 250 250)"/>
+  <use href="#minor" transform="rotate(315 250 250)"/>
+
+  <!-- Cardinal points -->
+  <use href="#major"/>
+  <use href="#major" transform="rotate(90 250 250)"/>
+  <use href="#major" transform="rotate(180 250 250)"/>
+  <use href="#major" transform="rotate(270 250 250)"/>
+
+  <!-- Center hub -->
+  <circle cx="250" cy="250" r="24" fill="#000"/>
+</svg>
