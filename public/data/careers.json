@@ -186,7 +186,7 @@
         "Which skills helped you most?",
         "What would you learn differently if you started again?"
       ],
-      "image": "/images/careers/software-developer.jpg"
+      "image": "/images/careers/software-developer.jfif"
     },
     {
       "id": "cybersecurity-analyst",
@@ -477,7 +477,7 @@
         "Which portfolio project helped you most?",
         "What business skill surprised you by being important?"
       ],
-      "image": "/images/careers/data-analyst.jpg"
+      "image": "/images/careers/data-analyst.jfif"
     },
     {
       "id": "it-support-specialist",
@@ -620,7 +620,7 @@
         "What troubleshooting skill did you learn first?",
         "How did you move into another IT role?"
       ],
-      "image": "/images/careers/it-support-specialist.jpg"
+      "image": "/images/careers/it-support-specialist.jfif"
     },
     {
       "id": "network-administrator",
@@ -766,7 +766,7 @@
         "Which lab helped you learn?",
         "How did you get your first infrastructure role?"
       ],
-      "image": "/images/careers/network-administrator.jpg"
+      "image": "/images/careers/network-administrator.jfif"
     },
     {
       "id": "ui-ux-designer",
@@ -901,7 +901,7 @@
         "How do you conduct user research?",
         "How do you work with developers?"
       ],
-      "image": "/images/careers/ui-ux-designer.jpg"
+      "image": "/images/careers/ui-ux-designer.jfif"
     },
     {
       "id": "accountant",
@@ -1022,7 +1022,7 @@
         "Which accounting software do you use?",
         "Which skill helped you progress fastest?"
       ],
-      "image": "/images/careers/accountant.jpg"
+      "image": "/images/careers/accountant.jfif"
     },
     {
       "id": "financial-analyst",
@@ -1148,7 +1148,7 @@
         "What financial model did you build first?",
         "Which technical skill helped you most?"
       ],
-      "image": "/images/careers/financial-analyst.jpg"
+      "image": "/images/careers/financial-analyst.jfif"
     },
     {
       "id": "digital-marketing-specialist",
@@ -1281,7 +1281,7 @@
         "Which campaign taught you the most?",
         "How do you measure campaign success?"
       ],
-      "image": "/images/careers/digital-marketing-specialist.jpg"
+      "image": "/images/careers/digital-marketing-specialist.jfif"
     },
     {
       "id": "project-manager",
@@ -1413,7 +1413,7 @@
         "How do you handle missed deadlines?",
         "Which project-management method do you use and why?"
       ],
-      "image": "/images/careers/project-manager.jpg"
+      "image": "/images/careers/project-manager.jfif"
     }
   ]
 }

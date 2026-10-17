@@ -1981,3 +1981,27 @@ button:disabled {
     max-width: 330px;
   }
 }
+
+.career-art {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 225px;
+  padding: 20px;
+  overflow: hidden;
+  border-radius: 16px 16px 0 0;
+  background: #eae8d9;
+  color: #101820;
+  text-decoration: none;
+  isolation: isolate;
+}
+
+/* Image behind the title */
+.career-image {
+  object-fit: cover;
+  object-position: center;
+  z-index: -2;
+}
+
+
