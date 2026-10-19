@@ -19,12 +19,12 @@ export default function SiteHeader() {
           {user ? (
             <>
               <Link href="/dashboard">Dashboard</Link>
-              <Link className="nav-user" href="/dashboard">
-                {user.name.split(" ")[0]}
-              </Link>
               <button className="nav-button" onClick={logout}>
                 Log out
               </button>
+              <Link className="nav-user" href="/dashboard">
+                {user.name.split(" ")[0]}
+              </Link>
             </>
           ) : (
             <>

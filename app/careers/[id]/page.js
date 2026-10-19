@@ -3,6 +3,7 @@ import Link from "next/link";
 import { careers, getCareer } from "@/lib/careers";
 import SaveCareerButton from "@/components/SaveCareerButton";
 import LearningPath from "@/components/LearningPath";
+import Image from "next/image";
 export function generateStaticParams() {
   return careers.map((career) => ({ id: career.id }));
 }
@@ -25,12 +26,21 @@ export default async function CareerDetailPage({ params }) {
           ← Back to career directory
         </Link>
         <section className="career-detail-hero">
-          <div className="career-detail-art">
+          <d className="career-detail-art">
+            {career.image && (
+                      <Image
+                        src={career.image}
+                        alt={career.title}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                        className="career-image"
+                      />
+                    )}
             <span className="art-kicker">{career.category}</span>
             <span className="detail-art-symbol">✳</span>
             <span className="detail-art-title">{career.title}</span>
             <span className="art-footer-note">A CAREER GUIDE · MERKEB</span>
-          </div>
+          </d>
           <div className="career-detail-copy">
             <p className="eyebrow">CAREER FIELD GUIDE</p>
             <h1>
