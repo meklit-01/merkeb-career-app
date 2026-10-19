@@ -26,7 +26,7 @@ export default async function CareerDetailPage({ params }) {
           ← Back to career directory
         </Link>
         <section className="career-detail-hero">
-          <d className="career-detail-art">
+          <div className="career-detail-art">
             {career.image && (
                       <Image
                         src={career.image}
@@ -40,7 +40,7 @@ export default async function CareerDetailPage({ params }) {
             <span className="detail-art-symbol">✳</span>
             <span className="detail-art-title">{career.title}</span>
             <span className="art-footer-note">A CAREER GUIDE · MERKEB</span>
-          </d>
+          </div>
           <div className="career-detail-copy">
             <p className="eyebrow">CAREER FIELD GUIDE</p>
             <h1>
