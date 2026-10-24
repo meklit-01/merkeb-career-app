@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useApp } from "./AppProviders";
+import ThemeToggle from "./ThemeToggle";
 export default function SiteHeader() {
   const { user, logout } = useApp();
   return (
@@ -34,6 +35,7 @@ export default function SiteHeader() {
               </Link>
             </>
           )}
+          <ThemeToggle />
         </nav>
       </div>
     </header>

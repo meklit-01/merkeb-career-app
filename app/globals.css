@@ -8,15 +8,22 @@
   --accent-dark: #78841b;
   --soft: #f0efe8;
   --radius: 16px;
+  --on-accent: #191916;
+}
+:root[data-theme="dark"]{
+  --ink:#f1f0ea; --muted:#a3a49b; --line:#33332e;
+  --paper:#161613; --white:#1f1f1b; --soft:#23231f;
+  color-scheme: dark;
 }
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 html {
   scroll-behavior: smooth;
 }
 body {
-  margin: 0;
   background: var(--paper);
   color: var(--ink);
   font-family: var(--font-dm), Arial, sans-serif;
@@ -49,7 +56,7 @@ button:disabled {
   position: sticky;
   top: 0;
   z-index: 30;
-  background: #fbfaf7;
+  background: var(--paper);
   border-bottom: 1px solid var(--line);
 }
 .header-inner {
@@ -144,7 +151,7 @@ button:disabled {
 }
 .button-dark {
   background: var(--ink);
-  color: white;
+  color: var(--paper);
 }
 .button-outline {
   background: transparent;
@@ -169,7 +176,7 @@ button:disabled {
   overflow: hidden;
   min-height: 460px;
   padding: 64px 20px 54px;
-  background: #f0efe8;
+  background: var(--soft);
   isolation: isolate;
 }
 .hero-inner {
@@ -204,7 +211,7 @@ button:disabled {
 .hero-description {
   max-width: 470px;
   margin: 22px 0 27px;
-  color: #5e5f58;
+  color: var(--muted);
   font-size: 15px;
   line-height: 1.8;
 }
@@ -219,7 +226,7 @@ button:disabled {
   gap: 8px;
   flex-wrap: wrap;
   margin-top: 26px;
-  color: #696a61;
+  color: var(--muted);
   font-size: 10px;
 }
 .proof-mark {
@@ -242,14 +249,14 @@ button:disabled {
   right: -80px;
   bottom: -55px;
   border-radius: 50%;
-  border: 1px solid #d8d7cb;
+  border: 1px solid var(--line);
   pointer-events: none;
   z-index: 1;
 }
 .hero-circle {
   position: absolute;
   border-radius: 50%;
-  border: 1px solid #d1d0c2;
+  border: 1px solid var(--line);
 }
 .circle-one {
   inset: 22px;
@@ -307,7 +314,7 @@ button:disabled {
   gap: 0;
   padding: 0 20px;
   border-bottom: 1px solid var(--line);
-  background: #fbfaf7;
+  background: var(--paper);
 }
 .value-strip > div {
   display: grid;
@@ -382,7 +389,7 @@ button:disabled {
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: white;
+  background: var(--white);
  
   transition:
     transform 0.2s ease,
@@ -428,7 +435,7 @@ button:disabled {
   display: flex;
   justify-content: space-between;
   gap: 8px;
-  color: #7a7b72;
+  color: var(--muted);
   font-size: 9px;
   text-transform: uppercase;
   letter-spacing: 0.3px;
@@ -451,8 +458,8 @@ button:disabled {
   padding: 6px 9px;
   border: 1px solid var(--line);
   border-radius: 999px;
-  background: #fbfaf7;
-  color: #5c5d55;
+  background: var(--paper);
+  color: var(--muted);
   font-size: 10px;
 }
 .career-card-body .text-link {
@@ -466,7 +473,7 @@ button:disabled {
   grid-template-columns: 1fr;
   gap: 30px;
   padding: 45px 20px;
-  background: #e9e8de;
+  background: var(--soft);
 }
 .plan-banner > div:first-child {
   max-width: 500px;
@@ -491,9 +498,9 @@ button:disabled {
   max-width: 360px;
   justify-self: center;
   padding: 23px;
-  border: 1px solid #deddd2;
+  border: 1px solid var(--line);
   border-radius: 16px;
-  background: #fbfaf7;
+  background: var(--paper);
   box-shadow: 0 18px 35px #1e1e1409;
 }
 .banner-card-label {
@@ -604,7 +611,7 @@ button:disabled {
   padding: 0 14px;
   border: 1px solid var(--line);
   border-radius: 10px;
-  background: white;
+  background: var(--white);
 }
 .search-box > span {
   font-size: 24px;
@@ -624,7 +631,7 @@ button:disabled {
   padding: 0 12px;
   border: 1px solid var(--line);
   border-radius: 10px;
-  background: white;
+  background: var(--white);
   color: var(--ink);
   font-size: 12px;
 }
@@ -635,7 +642,7 @@ button:disabled {
 }
 .empty-state {
   padding: 34px 20px;
-  border: 1px dashed #cfcec4;
+  border: 1px dashed var(--line);
   border-radius: var(--radius);
   text-align: center;
 }
@@ -776,7 +783,7 @@ button:disabled {
   padding: 19px;
   border: 1px solid var(--line);
   border-radius: 13px;
-  background: white;
+  background: var(--white);
 }
 .skill-stack article > span {
   color: #828b25;
@@ -802,8 +809,8 @@ button:disabled {
 .skill-stack li {
   padding: 7px 9px;
   border-radius: 7px;
-  background: #f1f0e9;
-  color: #5d5e56;
+  background: var(--soft);
+  color: var(--muted);
   font-size: 10px;
 }
 .learning-section {
@@ -820,7 +827,7 @@ button:disabled {
   padding: 8px 11px;
   border: 1px solid var(--line);
   border-radius: 999px;
-  background: white;
+  background: var(--white);
   color: var(--muted);
   font-size: 10px;
 }
@@ -833,7 +840,7 @@ button:disabled {
   padding: 20px;
   border: 1px solid var(--line);
   border-radius: 13px;
-  background: white;
+  background: var(--white);
 }
 .level-heading {
   display: flex;
@@ -875,7 +882,7 @@ button:disabled {
   gap: 10px;
   padding: 9px;
   border-radius: 8px;
-  background: #fbfaf7;
+  background: var(--paper);
   font-size: 12px;
   cursor: pointer;
 }
@@ -893,7 +900,7 @@ button:disabled {
   flex-shrink: 0;
   width: 20px;
   height: 20px;
-  border: 1px solid #d0cfc5;
+  border: 1px solid var(--line);
   border-radius: 50%;
   color: transparent;
   font-size: 11px;
@@ -926,7 +933,7 @@ button:disabled {
   padding: 23px;
   border: 1px solid var(--line);
   border-radius: 14px;
-  background: white;
+  background: var(--white);
 }
 .insight-card h3 {
   margin: 0 0 12px;
@@ -968,7 +975,7 @@ button:disabled {
   min-height: 0 !important;
 }
 .insight-international {
-  background: #f0efe8;
+  background: var(--soft);
 }
 .questions-section {
   padding: 35px 0 0;
@@ -983,7 +990,7 @@ button:disabled {
   padding: 18px;
   border: 1px solid var(--line);
   border-radius: 12px;
-  background: white;
+  background: var(--white);
 }
 .question-grid h3 {
   margin: 0 0 9px;
@@ -1022,7 +1029,7 @@ button:disabled {
 }
 .detail-bottom-cta .button {
   background: var(--ink);
-  color: white;
+  color: var(--paper);
   border-color: var(--ink);
 }
 .auth-page {
@@ -1039,7 +1046,7 @@ button:disabled {
   overflow: hidden;
   padding: 30px 24px;
   border-radius: 16px;
-  background: #efeee7;
+  background: var(--soft);
   isolation: isolate;
 }
 .auth-side:after {
@@ -1108,9 +1115,9 @@ button:disabled {
   width: 100%;
   min-height: 47px;
   padding: 12px;
-  border: 1px solid #d9d8d0;
+  border: 1px solid var(--line);
   border-radius: 8px;
-  background: white;
+  background: var(--white);
   color: var(--ink);
   font-weight: 400;
 }
@@ -1143,7 +1150,7 @@ button:disabled {
   padding: 25px;
   border: 1px solid var(--line);
   border-radius: 12px;
-  background: white;
+  background: var(--white);
   color: var(--muted);
   font-size: 13px;
 }
@@ -1181,7 +1188,7 @@ button:disabled {
   padding: 19px;
   border: 1px solid var(--line);
   border-radius: 13px;
-  background: white;
+  background: var(--white);
 }
 .stat-icon {
   position: absolute;
@@ -1222,7 +1229,7 @@ button:disabled {
   padding: 20px;
   border: 1px solid var(--line);
   border-radius: 14px;
-  background: white;
+  background: var(--white);
 }
 .panel-heading {
   display: flex;
@@ -1246,7 +1253,7 @@ button:disabled {
   height: 8px;
   overflow: hidden;
   border-radius: 999px;
-  background: #eeede5;
+  background: var(--line);
 }
 .progress-track span {
   display: block;
@@ -1271,9 +1278,9 @@ button:disabled {
   gap: 10px;
   position: relative;
   padding: 11px 9px;
-  border: 1px solid #eeede7;
+  border: 1px solid var(--line);
   border-radius: 9px;
-  background: #fbfaf7;
+  background: var(--paper);
   cursor: pointer;
 }
 .task-copy {
@@ -1320,14 +1327,14 @@ button:disabled {
     to top,
     transparent 0,
     transparent 24px,
-    #eeede7 25px
+    var(--line) 25px
   );
 }
 .bar-area span {
   width: 100%;
   max-width: 22px;
   border-radius: 5px 5px 0 0;
-  background: #e1e0d7;
+  background: var(--line);
   transition: height 0.2s;
 }
 .bar-area span.bar-active {
@@ -1363,7 +1370,7 @@ button:disabled {
   padding: 14px;
   border: 1px solid var(--line);
   border-radius: 11px;
-  background: white;
+  background: var(--white);
   text-decoration: none;
 }
 .saved-symbol {
@@ -1401,7 +1408,7 @@ button:disabled {
 .planner-hero {
   padding: 28px 20px;
   border-radius: 15px;
-  background: #efeee7;
+  background: var(--soft);
 }
 .planner-hero h1 {
   font-size: clamp(36px, 7vw, 60px);
@@ -1460,7 +1467,7 @@ button:disabled {
 }
 .site-footer {
   margin-top: 0;
-  background: #efeee7;
+  background: var(--soft);
 }
 .footer-inner {
   max-width: 1240px;
@@ -1487,7 +1494,7 @@ button:disabled {
 }
 .demo-disclaimer {
   padding-top: 8px;
-  border-top: 1px solid #dddbd0;
+  border-top: 1px solid var(--line);
 }
 @media (min-width: 600px) {
   .header-inner {
@@ -1708,7 +1715,7 @@ button:disabled {
   padding: 24px;
   border: 1px solid var(--line, #e6e5dc);
   border-radius: 22px;
-  background: var(--surface, #fffdf7);
+  background: var(--white);
   transition:
     transform 0.2s ease,
     border-color 0.2s ease;
@@ -1937,4 +1944,23 @@ button:disabled {
   object-fit: cover;
   object-position: center;
   z-index: -2;
+}
+
+/* Text that sits on the lime accent stays dark in both themes */
+.button-lime,
+.proof-mark,
+.nav-user,
+.art-open,
+.level-number,
+.stat-icon,
+.saved-symbol,
+.mini-task span,
+.course-mark,
+.topic-done .topic-check,
+.task-done .task-check,
+.detail-bottom-cta {
+  color: var(--on-accent);
+}
+.search-box input {
+  color: var(--ink);
 }
